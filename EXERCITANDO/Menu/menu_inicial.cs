@@ -8,7 +8,7 @@ namespace EXERCITANDO
 {
     internal class menu_inicial
     {
-        public void exibir_cabecalho()
+        public void exibir_cabecalho()  
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("**************");
@@ -26,7 +26,7 @@ namespace EXERCITANDO
             Console.WriteLine("\nSeja bem-vindo ao sistema de exercícios!");
         }
 
-
+        //mostrar o cabecalho na tela 
 
 
     }

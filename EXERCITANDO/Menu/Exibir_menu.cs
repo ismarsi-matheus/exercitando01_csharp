@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace EXERCITANDO
 {
-    internal class Exibir_menu
+    internal class Exibir_menu//definir a classe 
     {
-        public  void exibir_opcoes_menu()
+        public  void exibir_opcoes_menu()//definir a variavel para ser chamado em outro lugar 
         {
             Console.WriteLine("\nMenu de Opções:");
             Console.WriteLine("0 - Sair");
@@ -20,9 +20,9 @@ namespace EXERCITANDO
             Console.WriteLine("5 - Exercício 5");
             Console.WriteLine("6 - Exercício 6");
             Console.Write("\nDigite a opção escolhida: ");
-
+            //exibe os exercisios para seram escolhidos posteriormente 
             int opcao_escolhida;
-            if (!int.TryParse(Console.ReadLine(), out opcao_escolhida))
+            if (!int.TryParse(Console.ReadLine(), out opcao_escolhida))//caso o usuario nao selecione uma opçao valida 
             {
                 Console.WriteLine("\nEntrada inválida! Tente novamente.");
                 Thread.Sleep(2000);
@@ -32,7 +32,7 @@ namespace EXERCITANDO
                 return;
             }
 
-            switch (opcao_escolhida)
+            switch (opcao_escolhida)//funcoes de escolher a opçao 
             {
                 case 0:
                     Sair(); // Chama o método Sair para encerrar o programa
@@ -65,7 +65,7 @@ namespace EXERCITANDO
             }
         }
 
-        private static void Sair()
+        private static void Sair()//para sair da opcao escolhida 
         {
             Console.Clear();
             Console.WriteLine("Encerrando o programa...");
@@ -81,7 +81,7 @@ namespace EXERCITANDO
 
 
 
-        private static void executar_exercisio(int numero_exercisio)
+        private static void executar_exercisio(int numero_exercisio)//para executar as opçoes escolhidas 
         {
             Console.Clear();
             Console.WriteLine($"Exercício {numero_exercisio}");
@@ -122,6 +122,7 @@ namespace EXERCITANDO
             exibir_cabecalho();
             exibir_opcoes_menu();
         }
+       
 
 
 
